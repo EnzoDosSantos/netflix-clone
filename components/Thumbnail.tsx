@@ -23,7 +23,7 @@ function Thumbnail({ movie }: Props) {
                 layout="fill"
                 alt={movie.title || movie.original_name}
             />
-            <p className="relative mt-[120px] text-[white]/80 font-bold ml-2">{movie.title || movie.original_name}</p>
+            {/* <p className="relative mt-[120px] text-[white]/80 font-bold ml-2">{movie.title || movie.original_name}</p> */}
         </div>
     )
 }

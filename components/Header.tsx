@@ -6,7 +6,7 @@ import Loading from './Loading'
 
 function Header() {
     const [isScroll, setIsScroll] = useState(false)
-    const { logout, loading } = useAuth()
+    const { loading } = useAuth()
 
     useEffect(() => {
         const handleScroll = () => {
@@ -50,17 +50,16 @@ function Header() {
                 <SearchIcon className="hidden h-6 w-6 sm:inline cursor-pointer" />
                 {/* <p className="hidden lg:inline">Kids</p> */}
                 <BellIcon className="cursor-pointer h-6 w-6" />
-                {/* <Link href="/account"> */}
+                <Link href="/account">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        onClick={logout}
                         src="/avatar.png"
                         width={100}
                         height={100}
                         className="cursor-pointer rounded h-6 w-6"
                         alt="Profile Logo"
                     />
-                {/* </Link> */}
+                </Link>
             </div>
         </header>
     )
